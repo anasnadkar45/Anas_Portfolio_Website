@@ -35,10 +35,10 @@ const Navbar = () => {
 
     return (
         <nav className='h-[70px] w-full my-auto flex items-center justify-between 
-        border-b-[1px] border-gray-700'>
+        border-b-[1px] border-gray-700 '>
             <div className='flex items-center gap-1'>
                 <img src={Logo} alt="" className='h-8' />
-                <h1 className='text-2xl font-bold capitalize underline underline-offset-4 decoration-[#FFEE00]'>nas Nadkar</h1>
+                <h1 className='text-2xl font-bold capitalize underline underline-offset-4 decoration-[#1AD46F]'>nas Nadkar</h1>
             </div>
 
 

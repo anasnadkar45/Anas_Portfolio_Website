@@ -1,4 +1,6 @@
-import React from 'react'
+import HeroBg from '../../assets/bg.svg'
+import HeroBgAnimation from './HeroBgAnimation'
+import ProgrammingAnimate from '../../assets/programming-animate.svg'
 
 const HeroSection = () => {
     return (
@@ -21,6 +23,8 @@ const HeroSection = () => {
                         <div className=" w-24 h-24 rounded-2xl bg-[#FFEE00]"></div>
                         <div className=" w-24 h-24 rounded-full bg-green-500"></div>
                     </div>
+                    {/* <HeroBgAnimation />
+                    <img src={ProgrammingAnimate} alt="" className='rotate-[-60deg]'/> */}
                 </div>
             </div>
 

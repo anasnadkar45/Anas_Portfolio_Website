@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const HoverEffect = ({
+export const HoverEffect = ({
   items,
   className,
 }) => {
@@ -16,10 +16,10 @@ const HoverEffect = ({
         className
       )}
     >
-      {items.map((item, idx) => (
+      {items.map((item, idx , index) => (
         <a
           href={item?.link}
-          key={item?.link}
+          key={item?.index}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -27,7 +27,7 @@ const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[#FFEE00] dark:bg-slate-800/[0.8] block bg-opacity-70  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-[#FFEE00] dark:bg-slate-800/[0.8] block bg-opacity-70  rounded-lg"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -41,52 +41,17 @@ const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardIcon>{item.icon}</CardIcon>
-          </Card>
+          
+          <div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-4 
+          ring-[#1AD46F] relative z-20 transition-all duration-500 cursor-pointer">
+            <div className="py-10 z-50 relative space-y-5">
+              <p className="text-3xl font-bold text-center text-gray-300">{item.title}</p>
+              <a href="" className="flex justify-center">{item.icon}</a>
+            </div>
+          </div>
         </a>
       ))}
     </div>
   );
 };
 
-const Card = ({
-  className,
-  children,
-}) => {
-  return (
-    <div
-      className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-[black] border-4 border-transparent dark:border-white/[0.2] group-hover:border-[#19D36E] relative z-20",
-        className
-      )}
-    >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
-      </div>
-    </div>
-  );
-};
-const CardTitle = ({
-  className,
-  children,
-}) => {
-  return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
-      {children}
-    </h4>
-  );
-};
-const CardIcon = ({
-  className,
-  children,
-}) => {
-  return (
-    <a href="" >
-      {children}
-    </a>
-  );
-};
-
-export { HoverEffect, Card, CardTitle, CardIcon };

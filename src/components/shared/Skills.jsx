@@ -27,47 +27,47 @@ const Skills = () => {
 export const skills = [
     {
         title: "React",
-        icon: <FaReact />,
+        icon: <FaReact size='50px'/>,
         link: "https://stripe.com",
     },
     {
         title: "Tailwind",
-        icon: <SiTailwindcss />,
+        icon: <SiTailwindcss size='50px' />,
         link: "https://netflix.com",
     },
     {
         title: "Javascript",
-        icon:<RiJavascriptFill />,
+        icon:<RiJavascriptFill size='50px' />,
         link: "https://google.com",
     },
     {
         title: "TypeScript",
-        icon: <BiLogoTypescript /> ,
+        icon: <BiLogoTypescript size='50px' /> ,
         link: "https://meta.com",
     },
     {
         title: "MongoDb",
-        icon: <SiMongodb /> ,
+        icon: <SiMongodb size='50px' /> ,
         link: "https://amazon.com",
     },
     {
         title: "Express.js",
-        icon: <SiExpress />,
+        icon: <SiExpress size='50px' />,
         link: "https://microsoft.com",
     },
     {
         title: "Node.js",
-        icon: <FaNodeJs /> ,
+        icon: <FaNodeJs size='50px' /> ,
         link: "https://microsoft.com",
     },
     {
         title: "Git",
-        icon: <FaGitAlt />,
+        icon: <FaGitAlt size='50px' />,
         link: "https://microsoft.com",
     },
     {
         title: "Next.js",
-        icon: <SiNextdotjs />,
+        icon: <SiNextdotjs size='50px' />,
         link: "https://microsoft.com",
     },
 ];

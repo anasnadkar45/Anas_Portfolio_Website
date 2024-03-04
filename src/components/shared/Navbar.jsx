@@ -1,37 +1,9 @@
 import React from 'react'
 import Logo from '../../assets/Anaslogo2.svg'
-import { FaGithub } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Button } from '../ui/button';
 
 const Navbar = () => {
-    // const Links = [
-    //     {
-    //         link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
-    //         label: "LinkedIn",
-    //         icon: <FaGithub size='30px' />
-    //     },
-    //     {
-    //         link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
-    //         label: "LinkedIn",
-    //         icon: <FaGithub size='30px' />
-    //     },
-    //     {
-    //         link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
-    //         label: "LinkedIn",
-    //         icon: <FaGithub size='30px' />
-    //     },
-    //     {
-    //         link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
-    //         label: "LinkedIn",
-    //         icon: <FaGithub size='30px' />
-    //     },
-    //     {
-    //         link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
-    //         label: "LinkedIn",
-    //         icon: <FaGithub size='30px' />
-    //     },
-    // ]
 
     return (
         <nav className='h-[70px] w-full my-auto flex items-center justify-between 
@@ -40,17 +12,6 @@ const Navbar = () => {
                 <img src={Logo} alt="" className='h-8' />
                 <h1 className='text-2xl font-bold capitalize underline underline-offset-4 decoration-[#1AD46F]'>nas Nadkar</h1>
             </div>
-
-
-            {/* <div className='flex items-center '>
-                {
-                    Links.map((link)=>(
-                        <a href="">
-                            {link.icon}
-                        </a>
-                    ))
-                }
-            </div> */}
 
             <div className='flex gap-8'>
                 <li className='flex gap-8 items-center'>

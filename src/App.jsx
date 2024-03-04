@@ -1,5 +1,6 @@
 import './App.css'
 import ContactMe from './components/shared/ContactMe'
+import Footer from './components/shared/Footer'
 import HeroSection from './components/shared/HeroSection'
 import Navbar from './components/shared/Navbar'
 import Projects from './components/shared/Projects'
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className='space-grotesk bg-black min-h-[400vh]'>
+      <div className='space-grotesk bg-black min-h-screen'>
         <div className='bg-black  bg-dot-white/[0.2] relative'>
           <div className='max-w-7xl mx-auto sm:px-5 pb-10'>
             <Navbar />
@@ -26,6 +27,7 @@ function App() {
           <Skills />
           <Projects />
           <ContactMe />
+          <Footer />
         </div>
       </div>
     </>

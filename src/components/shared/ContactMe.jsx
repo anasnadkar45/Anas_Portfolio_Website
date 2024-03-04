@@ -7,7 +7,7 @@ import Title from './Title';
 
 const ContactMe = () => {
     return (
-        <div className='flex-col items-center'>
+        <div className='flex-col items-center mb-10'>
             <div className='w-full flex justify-center'>
                 <Title>Contact</Title>
             </div>

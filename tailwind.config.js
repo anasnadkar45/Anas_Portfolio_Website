@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { nextui } = require("@nextui-org/react");
 const svgToDataUri = require("mini-svg-data-uri");
 
 const colors = require("tailwindcss/colors");
@@ -12,6 +13,7 @@ module.exports = {
     './components/**/*.{js,jsx}',
     './app/**/*.{js,jsx}',
     './src/**/*.{js,jsx}',
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   prefix: "",
   theme: {
@@ -88,7 +90,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),
+  plugins: [
+    nextui(),
+    require("tailwindcss-animate"),
     addVariablesForColors,
   function ({ matchUtilities, theme }) {
     matchUtilities(

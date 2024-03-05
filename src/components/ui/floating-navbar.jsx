@@ -6,8 +6,9 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import { cn } from "@/utils/cn";
-import Link from "next/link";
+import { cn } from "@/lib/utils";
+// import { cn } from "@/utils/cn";
+// import Link from "next/link";
 
 const FloatingNav = ({
   navItems,
@@ -54,7 +55,7 @@ const FloatingNav = ({
         )}
       >
         {navItems.map((navItem, idx) => (
-          <Link
+          <a
             key={`link-${idx}`}
             href={navItem.link}
             className={cn(
@@ -63,7 +64,7 @@ const FloatingNav = ({
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </Link>
+          </a>
         ))}
         <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
           <span>Login</span>

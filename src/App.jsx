@@ -28,10 +28,15 @@ function App() {
           xl:bottom-0 w-full'></div>
           <div className='max-w-7xl mx-auto sm:px-5 '>
             <Skills />
-            <Projects />
-            <ContactMe />
-            <Footer />
           </div>
+          <div className='h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-7 left-0 
+          xl:bottom-0 w-full'></div>
+        </div>
+
+        <div className='max-w-7xl mx-auto sm:px-5 '>
+          <Projects />
+          <ContactMe />
+          <Footer />
         </div>
 
       </div>

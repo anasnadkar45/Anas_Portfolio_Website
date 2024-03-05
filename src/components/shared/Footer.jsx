@@ -31,7 +31,7 @@ const Footer = () => {
                     <img src={Logo} alt="" className='h-8' />
                     <h1 className='text-2xl font-bold capitalize underline underline-offset-4 decoration-[#1AD46F]'>nas Nadkar</h1>
                 </div>
-                <div className='flex items-center justify-center space-x-2'>
+                <div className='flex items-center justify-center space-x-2 absolute top-[50%] right-0'>
                     {
                         Links.map((link) => (
                             <a href="">

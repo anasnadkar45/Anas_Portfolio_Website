@@ -8,8 +8,8 @@ const Navbar = () => {
     return (
         <nav className='h-[70px] w-full my-auto flex items-center justify-between 
         border-b-[2px] border-[#1a1a1a] '>
-            <div className='flex items-center gap-1'>
-                <img src={Logo} alt="" className='h-8' />
+            <div className='flex items-center gap-1 group cursor-pointer'>
+                <img src={Logo} alt="" className='h-8 group-hover:rotate-[270deg] transition-all duration-500' />
                 <h1 className='text-2xl font-bold capitalize underline underline-offset-4 decoration-[#1AD46F]'>nas Nadkar</h1>
             </div>
 

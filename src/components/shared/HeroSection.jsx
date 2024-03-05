@@ -4,7 +4,7 @@ import ProgrammingAnimate from '../../assets/programming-animate.svg'
 
 const HeroSection = () => {
     return (
-        <div className='flex items-center justify-between relative min-h-[60vh] flex-col-reverse lg:flex-row gap-12 lg:gap-0 sm:pt-10'>
+        <div className='w-full flex items-center justify-between relative min-h-[60vh] flex-col-reverse lg:flex-row gap-12 lg:gap-0 sm:pt-10'>
 
             <div className='space-y-6 text-center lg:text-left'>
                 <h1 className='text-4xl lg:text-6xl font-bold'>Nice to meet you! 👋 <br />

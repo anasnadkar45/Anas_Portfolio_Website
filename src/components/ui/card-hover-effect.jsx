@@ -27,7 +27,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[#FFEE00] dark:bg-slate-800/[0.8] block bg-opacity-70  rounded-lg"
+                className="absolute inset-0 h-full w-full bg-[#FFEE00] dark:bg-slate-800/[0.8] block bg-opacity-70 rounded-lg"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -43,8 +43,8 @@ export const HoverEffect = ({
           </AnimatePresence>
           
           <div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-4 
-          ring-[#1AD46F] relative z-20 transition-all duration-500 cursor-pointer">
-            <div className="py-10 z-50 relative space-y-5">
+          ring-[#1AD46F] relative z-20 transition-all duration-500  cursor-pointer border border-slate-400 hover:border-none">
+            <div className="py-10 z-50 relative space-y-5 ">
               <p className="text-3xl font-bold text-center text-gray-300">{item.title}</p>
               <a href="" className="flex justify-center">{item.icon}</a>
             </div>

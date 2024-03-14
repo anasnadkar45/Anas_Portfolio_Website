@@ -3,7 +3,7 @@ import Title from './Title'
 
 const Projects = () => {
     return (
-        <div>
+        <div className='pt-10 pb-10'>
             <div className='flex justify-center'>
                 <Title>Projects</Title>
             </div>

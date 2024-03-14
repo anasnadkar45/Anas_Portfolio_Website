@@ -20,15 +20,21 @@ const ContactMe = () => {
                         Full-Time Job or a Freelance work. Send me a message, I'll try to get back to you as soon as possible.</p>
                 </div>
                 <div className='flex justify-center gap-2 sm:gap-6 '>
-                    <Button className='bg-[#1AD46F] text-black text-sm sm:text-lg font-semibold gap-1 group px-4'>
-                        <IoMailUnread size='25px' /> Say Hello
-                    </Button>
-                    <BorderButton
-                        className="bg-slate-900 text-white border-slate-800 rounded-md gap-1 
+                    <a href="mailto:anasnadkar23@gmail.com">
+                        <Button className='bg-[#1AD46F] text-black text-sm sm:text-lg font-semibold gap-1 group px-4'>
+                            <IoMailUnread size='25px' /> Say Hello
+                        </Button>
+                    </a>
+
+                    <a href="mailto:anasnadkar23@gmail.com">
+                        <BorderButton
+                            className="bg-slate-900 text-white border-slate-800 rounded-md gap-1 
                         text-sm sm:text-lg font-semibold"
-                    >
-                        <IoLogoWhatsapp size='25px' /> Say Hello
-                    </BorderButton>
+                        >
+                            <IoLogoWhatsapp size='25px' /> Say Hello
+                        </BorderButton>
+                    </a>
+
                 </div>
             </div>
         </div>

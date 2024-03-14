@@ -10,6 +10,7 @@ import './index.css'
 
 function App() {
 
+  
   return (
     <>
       <div className='space-grotesk bg-black min-h-screen sm:min-w-full'>
@@ -23,7 +24,7 @@ function App() {
           xl:bottom-0 w-full'></div> */}
 
         </div>
-        <div className='bg-black  bg-dot-white/[0.2] relative'>
+        <div id="skills" className='bg-black  bg-dot-white/[0.2] relative'>
           <div className='h-10 xl:h-32 bg-gradient-to-b from-black opacity-85 absolute top-0 left-0 
           xl:bottom-0 w-full'></div>
           <div className='max-w-7xl mx-auto sm:px-5 '>
@@ -34,9 +35,16 @@ function App() {
         </div>
 
         <div className='max-w-7xl mx-auto sm:px-5 '>
-          <Projects />
-          <ContactMe />
-          <Footer />
+          <div id="projects">
+            <Projects />
+          </div>
+          <div id="contact">
+            <ContactMe />
+          </div>
+          <div id="footer">
+            <Footer />
+          </div>
+
         </div>
 
       </div>

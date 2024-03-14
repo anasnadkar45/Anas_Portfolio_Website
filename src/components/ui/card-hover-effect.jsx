@@ -43,7 +43,7 @@ export const HoverEffect = ({
           </AnimatePresence>
           
           <div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-4 
-          ring-[#1AD46F] relative z-20 transition-all duration-500  cursor-pointer border border-slate-400 hover:border-none">
+          ring-[#1AD46F] relative z-20 transition-all duration-500  cursor-pointer border border-slate-400">
             <div className="py-10 z-50 relative space-y-5 ">
               <p className="text-3xl font-bold text-center text-gray-300">{item.title}</p>
               <a href="" className="flex justify-center">{item.icon}</a>

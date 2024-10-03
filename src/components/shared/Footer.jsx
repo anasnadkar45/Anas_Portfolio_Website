@@ -2,24 +2,24 @@ import React from 'react'
 import Logo from '../../assets/Anaslogo2.svg'
 import Portfolio from '../../assets/PORTFOLIO.svg'
 import Portfolio2 from '../../assets/Portfolio.png'
-import { FaGithub } from 'react-icons/fa6'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
     const Links = [
         {
             link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
             label: "Github",
-            icon: <FaGithub size='25px' />
+            icon: <FaLinkedin size='25px' />
         },
         {
-            link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
+            link: "https://github.com/anasnadkar45/",
             label: "LinkedIn",
             icon: <FaGithub size='25px' />
         },
         {
-            link: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in",
+            link: "https://twitter.com/anasnadkar45",
             label: "Twitter",
-            icon: <FaGithub size='25px' />
+            icon: <FaTwitter size='25px' />
         },
     ]
     return (

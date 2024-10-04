@@ -34,7 +34,7 @@ const Footer = () => {
                 <div className='flex items-center justify-center space-x-2'>
                     {
                         Links.map((link) => (
-                            <a href="">
+                            <a href={link.link}>
                                 {link.icon}
                             </a>
                         ))
